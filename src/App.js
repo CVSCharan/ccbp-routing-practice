@@ -1,5 +1,5 @@
-import { Route, Switch } from "react-router-dom";
-
+import { Route, Routes } from "react-router-dom";
+import React from "react";
 import Header from "./components/Header";
 import About from "./components/About";
 import Home from "./components/Home";
@@ -13,12 +13,12 @@ const App = () => (
     <div className="responsive-container">
       <Header />
       <div className="app-body">
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/contact" component={Contact} />
-          <Route component={NotFound} />
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/contact" element={<Contact />} />
+          <Route element={<NotFound />} />
+        </Routes>
       </div>
     </div>
   </div>
