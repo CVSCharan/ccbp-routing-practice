@@ -1,14 +1,17 @@
 import "./index.css";
 
-const Contact = () => (
-  <div className="contact-container">
+const About = () => (
+  <div className="about-container">
     <img
-      src="https://assets.ccbp.in/frontend/react-js/contact-blog-img.png"
-      alt="contact"
-      className="contact-img"
+      src="https://assets.ccbp.in/frontend/react-js/about-blog-img.png"
+      alt="about"
+      className="about-img"
     />
-    <h1 className="contact-heading">Contact</h1>
+    <h1 className="about-heading">About</h1>
+    <p className="about-paragraph">
+      I love to create! I am a frontend web developer
+    </p>
   </div>
 );
 
-export default Contact;
+export default About;
